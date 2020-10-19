@@ -1,0 +1,28 @@
+{
+  "name": "nodetemplate",
+  "version": "1.0.0",
+  "description": "Basic template starter files for node projects",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigmachkm/nodetemplate.git"
+  },
+  "keywords": [
+    "starter",
+    "node",
+    "template"
+  ],
+  "author": "Hamish Macfie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigmachkm/nodetemplate/issues"
+  },
+  "homepage": "https://github.com/bigmachkm/nodetemplate#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
