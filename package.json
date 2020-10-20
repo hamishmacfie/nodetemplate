@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Basic template starter files for node projects",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon node app.js"
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/bigmachkm/nodetemplate#readme",
   "dependencies": {
+    "bulma": "^0.9.1",
     "ejs": "^3.1.5",
     "express": "^4.17.1"
   }

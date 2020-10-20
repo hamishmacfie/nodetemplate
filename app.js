@@ -1,18 +1,18 @@
 const express = require("express");
-
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("This is the homepage");
-});
+// Middleware
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.get("/page-one", (req, res) => {
-  res.send("This is page one");
-});
+// Template Engine
+app.set("view engine", "ejs");
+app.set("views", "views");
 
-app.get("/page-two", (req, res) => {
-  res.send("this is page two");
-});
+// Routes
+app.use('/', require('./routes/router'));
+
 
 const PORT = process.env.PORT || 3000;
 
