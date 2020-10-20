@@ -4,7 +4,8 @@
   "description": "Basic template starter files for node projects",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon node app.js"
   },
   "repository": {
     "type": "git",
