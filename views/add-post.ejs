@@ -1,0 +1,36 @@
+<%- include('includes/header.ejs') %>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half">
+        <h1 class="title">Insert Data</h1>
+
+        <form action="/create" method="POST">
+        <div class="field">
+          <label for="name">Title</label>
+          <div class="control">
+            <input class="input" name="title" placeholder="Title" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="content">Post Content</label>
+          <div class="control">
+            <textarea
+              class="textarea"
+              name="content"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button class="button is-primary my-3">Create Post</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('includes/footer.ejs') %>
